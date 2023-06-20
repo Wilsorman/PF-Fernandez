@@ -119,16 +119,44 @@ main label{
 main img{
     width: 400px;
 }
-main {
+   main{
     display: grid;
     grid-area: main;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 40px 1fr 1fr;
     justify-content: center;
+    
 }
 
+
+.titulo-tb-realizados{
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    text-align: center;
+}
+
+.trabajos-realizados{
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 4;
+    text-align: center;
+}
+
+
+.titulo-contacto{
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    text-align: center;
+}
+
+.formulario-contacto{
+    margin-top: 5%;
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 4;
+    text-align: center;
+}
 footer {
     grid-area: footer;
+    top: auto;
     
 }
 
@@ -151,4 +179,3 @@ footer {
 .iconos p {
     margin-left: 0.9rem;
 }
-
