@@ -7,33 +7,42 @@
 img {
     max-width: 300px;
 }
+
+/* <!--Padre de la grilla de la pagina--> */
+
 .content-father {
     display: grid;
     height: 100vh;
+    width: 100%;
     grid-template-areas:
         "header header header"
         "main main main"
         "footer footer footer";
     grid-template-columns: 40px 1fr 40px;
     grid-template-rows: 80px 1fr 80px;
-    grid-gap: 1rem;
+    grid-auto-rows: auto;
+    grid-auto-flow: row;
 }
 
-/* .content-father div {
-    border: 1px solid black;
-} */
 
-/* <!-----Comienza el header---->  */
+/* <!-----Comienza el header y nav-bar vista mobile---->  */
 
 
 header {
-    grid-area: header;  
+    grid-area: header;
     border-bottom: 0px solid black;
     box-shadow: 0 0.2rem 3rem -1rem;
     background-color: #97a8c6;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 0;
+    width: 100%;
+}
+
+.menu-mobile {
+    display: none;
+    grid-area: header;
 }
 
 .logo {
@@ -52,7 +61,7 @@ header {
 }
 
 .botom-nav li {
-    padding: 0px;  
+    padding: 0px;
     display: inline;
     color: white;
 }
@@ -75,92 +84,172 @@ header {
 
 /* <!-----Termina el header---->  */
 
-.left-col-quienesomos{
-    grid-row: 3 / 4;
-grid-column: 1 / span 2;
-text-align: center;
-background-color: #4d4949;}
 
-.caja-fotos-principales{
-    grid-row: 4 ;
+/* <!--Comienza Grids del index--> */
+.left-col-quienesomos {
+    grid-row: 3 / 4;
     grid-column: 1 / span 2;
     text-align: center;
     background-color: #4d4949;
 }
 
-.foto-primer-row{
+.caja-fotos-principales {
+    grid-row: 4;
+    grid-column: 1 / span 2;
+    text-align: center;
+    background-color: #4d4949;
+}
+
+.foto-primer-row {
     grid-row: 2 / span 1;
     grid-column: 2 / span 1;
     text-align: center;
 }
 
-.titulo-main{
+.titulo-main {
     grid-column: 1 / span 2;
     grid-row: 1;
     text-align: center;
 }
-.primer-row{
-    grid-column: 1 ;
+
+.primer-row {
+    grid-column: 1;
     grid-row: 2;
     text-align: center;
     background-color: #3861a8;
 }
 
-.primer-rop h1{
-    grid-row: 1 ;
+.primer-rop h1 {
+    grid-row: 1;
     grid-column: 1 / span 2;
 }
-.primer-row p{
+
+.primer-row p {
     margin-top: 15%;
 }
-main label{
+
+/* <!--Termina grids del index--> */
+
+/* <!--Comienza main--> */
+main label {
     display: block;
 }
-main img{
+
+main img {
     width: 400px;
 }
-   main{
+
+main {
     display: grid;
     grid-area: main;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 40px 1fr 1fr;
     justify-content: center;
-    
+
 }
 
+/* <!--Termina main--> */
 
-.titulo-tb-realizados{
+
+/* <!--Comienza CSS trabajos-realizados--> */
+
+.titulo-tb-realizados {
     grid-column: 1 / span 2;
     grid-row: 1;
     text-align: center;
 }
 
-.trabajos-realizados{
+.trabajos-realizados {
     grid-column: 1 / span 2;
     grid-row: 2 / span 4;
     text-align: center;
 }
 
+/* <!--Termina CSS trabajos-realizados--> */
 
-.titulo-contacto{
+
+/* <!--Comienza CSS Contactanos--> */
+
+
+.titulo-contacto {
     grid-column: 1 / span 2;
     grid-row: 1;
     text-align: center;
 }
 
-.formulario-contacto{
+.formulario-contacto {
     margin-top: 5%;
     grid-column: 1 / span 2;
     grid-row: 2 / span 4;
     text-align: center;
 }
+
+/* <!--Termina CSS Contactanos--> */
+
+
+/* <!--Comienza CSS acerca-nosotros--> */
+
+.mision {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+    text-align: center;
+}
+
+.vision {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    text-align: center;
+}
+
+.valores {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    text-align: center;
+}
+
+/* <!--Termina CSS acerca-nosotros--> */
+
+
+/* <!--media query vista mobile--> */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .menu-mobile {
+        display: block;
+        list-style: none;
+
+    }
+
+    .custom-color-nav {
+        background-color: #97a8c6;
+    }
+
+    .custom-color-nav .nav-item {
+        background-color: #97a8c6;
+    }
+
+    header {
+        display: none;
+    }
+
+    .botom-nav {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+}
+
+/* <!--Comienza footer--> */
+
 footer {
     grid-area: footer;
     top: auto;
-    
+
 }
 
-.iconos{
+.iconos {
     display: flex;
     min-height: 7rem;
     justify-content: flex-end;

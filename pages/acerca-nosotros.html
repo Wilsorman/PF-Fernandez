@@ -5,79 +5,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Fega Proveedores</title>
     <link rel="icon" href="../images/logofega.ico" type="icon">
 </head>
 
 <body>
-    <!---COMIENZA HEADER-->
-    <header class="header">
-        <img src="../images/logofega.png" alt="logo-empresa" class="logo">
-        <nav class="botom-nav">
-            <ul>
-                <li><a href="../index.html">¿Quienes Somos?</a></li>
-                <li><a href="../pages/trabajos-realizados.html">Trabajos Realizados</a></li>
-                <li><a href="../pages/acerca-nosotros.html">Acerca de Nosotros</a></li>
-                <li><a href="../pages/servicios.html">Servicios</a></li>
-                <li><a href="../pages/contactanos.html">Contactanos</a></li>
-            </ul>
-        </nav>
 
-    </header>
-    <main>
-        <!----TERMINA EL HEADER-->
+    <div class="content-father">
+        <!--Comienza Menu Mobile Boostrap-->
 
-        <!---COMIENZA MAIN-->
-        <section>
-            <h1>Mision</h1>
-            <p>Nuestra misión es brindar valor a nuestros clientes a través de la prestación de servicios de ingeniería,
-                suministros, construcción, operación y gerenciamiento de proyectos de infraestructura.</p>
-            <img src="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png">
-        </section>
-        <section>
-            <h1>Vision</h1>
-            <p>Buscamos ser la empresa de ingeniería y construcción líder en lo que respecta a método de trabajo,
-                patrimonio tecnológico y capacidades de sus recursos humanos.</p>
-            <img src="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png">
-        </section>
-        <section>
-            <h1> Valores</h1>
-            <ul>
-                <h3>Seguridad</h3>
-                <li>Compromiso con la seguridad de las personas, con el cuidado del medio ambiente y con el desarrollo
-                    de las comunidades.</li>
-                <h3>Raíz local, visión global</h3>
-                <li>Arraigo local y respeto por la diversidad cultural en el marco de una visión global de los negocios.
-                </li>
-                <h3>Confiabilidad</h3>
-                <li>Énfasis en los procesos y la previsibilidad</li>
-            </ul>
-            <p>
-
-                Arraigo local y respeto por la diversidad cultural en el marco de una visión global de los negocios.
-
-                Nuestra gente
-                Desarrollo de los recursos humanos y construcción de conocimiento.
-
-                Compliance
-                Transparencia y profesionalismo en la gestión.
-
-                Confiabilidad
-                Énfasis en los procesos y la previsibilidad.</p>
-            <img src="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png">
-        </section>
-    </main>
-    <!---Termina el main-->
-
-    <!---Comienza el Footer-->
-    <footer>
-        <div class="iconos">
-            <a href="http://www.facebook.com.ar">
-                <img src="/images/facebook.png" alt="Logo red social Facebook"></a>
-            <p>Copyright © 2023 FegaProveedores. Todos los derechos reservados.</p>
+        <div class="menu-mobile">
+            <nav class="navbar navbar-expand-lg custom-color-nav">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">¿Quienes Somos?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/trabajos-realizados.html">Trabajos Realizados</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/acerca-nosotros.html">Acerca de Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/contactanos.html">Contactanos</a>
+                            </li>
+                        </ul>
+                        </form>
+                    </div>
+                </div>
+            </nav>
         </div>
-    </footer>
+        <!--  Termina Menu Mobile Boostrap / Comienza Header vista desktop-->
+        <header>
+            <img src="../images/logofega.png" alt="logo-empresa" class="logo">
+            <nav class="botom-nav">
+                <ul>
+                    <li><a href="../index.html">¿Quienes Somos?</a></li>
+                    <li><a href="../pages/trabajos-realizados.html">Trabajos Realizados</a></li>
+                    <li><a href="../pages/acerca-nosotros.html">Acerca de Nosotros</a></li>
+                    <li><a href="../pages/servicios.html">Servicios</a></li>
+                    <li><a href="../pages/contactanos.html">Contactanos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--TERMINA EL HEADER-->
+
+        <!--COMIENZA MAIN-->
+        <main>
+            <section class="mision">
+                <h1>Mision</h1>
+                <p>Nuestra misión es brindar valor a nuestros clientes a través de la prestación de servicios de
+                    ingeniería,
+                    suministros, construcción, operación y gerenciamiento de proyectos de infraestructura.</p>
+                <img src="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png">
+            </section>
+            <section class=" vision">
+                <h1>Vision</h1>
+                <p>Buscamos ser la empresa de ingeniería y construcción líder en lo que respecta a método de trabajo,
+                    patrimonio tecnológico y capacidades de sus recursos humanos.</p>
+                <img src="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png">
+            </section>
+            <section class="valores">
+                <h1> Valores</h1>
+                <ul>
+                    <h3>Seguridad</h3>
+                    <li>Compromiso con la seguridad de las personas, con el cuidado del medio ambiente y con el
+                        desarrollo
+                        de las comunidades.</li>
+                    <h3>Raíz local, visión global</h3>
+                    <li>Arraigo local y respeto por la diversidad cultural en el marco de una visión global de los
+                        negocios.
+                    </li>
+                    <h3>Confiabilidad</h3>
+                    <li>Énfasis en los procesos y la previsibilidad</li>
+                </ul>
+                <p>
+
+                    Arraigo local y respeto por la diversidad cultural en el marco de una visión global de los negocios.
+                </p>
+            </section>
+        </main>
+        <!--Termina el main-->
+
+        <!--Comienza el Footer-->
+        <footer>
+            <div class="iconos">
+                <a href="http://www.facebook.com.ar">
+                    <img src="/images/facebook.png" alt="Logo red social Facebook"></a>
+                <p>Copyright © 2023 FegaProveedores. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
