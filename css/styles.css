@@ -20,8 +20,7 @@ img {
         "footer footer footer";
     grid-template-columns: 40px 1fr 40px;
     grid-template-rows: 80px 1fr 80px;
-    grid-auto-rows: auto;
-    grid-auto-flow: row;
+    overflow-x: hidden;
 }
 
 
@@ -184,6 +183,11 @@ main {
     text-align: center;
 }
 
+.custom-color-btn {
+    background-color: #97a8c6;
+
+}
+
 /* <!--Termina CSS Contactanos--> */
 
 
@@ -216,6 +220,7 @@ main {
     .menu-mobile {
         display: block;
         list-style: none;
+        width: 100%;
 
     }
 
