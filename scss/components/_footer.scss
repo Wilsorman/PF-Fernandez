@@ -1,0 +1,56 @@
+footer {
+    grid-area: footer;
+    top: auto;
+
+}
+
+.iconos {
+    display: flex;
+    min-height: 7rem;
+    justify-content: flex-end;
+    border: 2px solid rgba(0, 0, 0, 0.165);
+    background-color: #97a8c6;
+
+    img {
+        max-width: 20px;
+        max-height: 20px;
+        margin-left: 1rem;
+        display: inline-block;
+
+    }
+
+    p {
+        margin-left: 0.9rem;
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .menu-mobile {
+        display: block;
+        list-style: none;
+        width: 100%;
+
+    }
+
+    .custom-color-nav {
+        background-color: #97a8c6;
+    }
+
+    .custom-color-nav .nav-item {
+        background-color: #97a8c6;
+    }
+
+    header {
+        display: none;
+    }
+
+    .botom-nav {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+}

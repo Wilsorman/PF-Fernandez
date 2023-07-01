@@ -1,0 +1,55 @@
+header {
+    grid-area: header;
+    border-bottom: 0px solid black;
+    box-shadow: 0 0.2rem 3rem -1rem;
+    background-color: #97a8c6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+    width: 100%;
+}
+
+.menu-mobile {
+    display: none;
+    grid-area: header;
+}
+
+.logo {
+    max-height: 60px;
+    margin-left: 2%;
+    display: inline;
+    border-radius: 3%;
+    overflow: auto;
+    margin-left: -300px;
+
+}
+
+.botom-nav {
+    ul {
+        list-style-type: none;
+        padding-left: 400px;
+    }
+
+    li {
+        padding: 0px;
+        display: inline;
+        color: white;
+    }
+
+    a {
+        color: black;
+        padding: 1rem;
+        text-decoration: none
+    }
+
+    a:hover {
+        text-decoration: underline red;
+        cursor: pointer;
+        border-radius: 4%;
+    }
+
+    a :visited {
+        color: black;
+    }
+}
