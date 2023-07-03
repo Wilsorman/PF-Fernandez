@@ -115,13 +115,13 @@ footer {
   .custom-color-nav .nav-item {
     background-color: #97a8c6;
   }
-  header {
+  .custom-color-nav header {
     display: none;
   }
-  .botom-nav {
+  .custom-color-nav .botom-nav {
     display: none;
   }
-  .logo {
+  .custom-color-nav .logo {
     display: none;
   }
 }
@@ -187,6 +187,7 @@ footer {
 }
 
 .primer-row {
+  margin-top: 1rem;
   grid-column: 1;
   grid-row: 2;
   text-align: center;
@@ -198,6 +199,7 @@ footer {
 }
 .primer-row p {
   margin-top: 15%;
+  color: white;
 }
 
 .titulo-tb-realizados {

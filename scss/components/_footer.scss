@@ -29,15 +29,12 @@ footer {
     .menu-mobile {
         display: block;
         list-style: none;
-        width: 100%;
-
-    }
+        width: 100%;}
 
     .custom-color-nav {
-        background-color: #97a8c6;
-    }
+        background-color:$color-principal;
 
-    .custom-color-nav .nav-item {
+    & .nav-item {
         background-color: #97a8c6;
     }
 
@@ -53,4 +50,4 @@ footer {
         display: none;
     }
 
-}
+}}
