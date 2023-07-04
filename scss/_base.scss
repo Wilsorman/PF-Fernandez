@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-img {
-    max-width: 300px;
-}
 
 .content-father {
     display: grid;
@@ -30,9 +27,7 @@ main {
     grid-template-rows: 40px 1fr 1fr;
     justify-content: center;
 
-    img {
-        width: 400px;
-    }
+
 
     label {
         display: block;
@@ -40,3 +35,8 @@ main {
 }
 
 $color-principal:#97a8c6;
+
+
+img{
+    max-width: 300px;
+}

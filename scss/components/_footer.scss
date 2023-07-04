@@ -33,9 +33,9 @@ footer {
 
     .custom-color-nav {
         background-color:$color-principal;
-
-    & .nav-item {
-        background-color: #97a8c6;
+        & .nav-item {
+            background-color: #97a8c6;
+        }
     }
 
     header {
@@ -43,11 +43,12 @@ footer {
     }
 
     .botom-nav {
-        display: none;
+        display: hidden;
     }
 
     .logo {
         display: none;
     }
 
-}}
+
+}

@@ -39,17 +39,22 @@ header {
 
     a {
         color: black;
+        text-decoration: none;
         padding: 1rem;
-        text-decoration: none
+        margin: 2rem;
     }
+
 
     a:hover {
         text-decoration: underline red;
         cursor: pointer;
         border-radius: 4%;
+        transition-duration: 0.6s;
+        margin: 0rem;
     }
 
-    a :visited {
-        color: black;
-    }
 }
+
+
+
+
