@@ -6,6 +6,18 @@
 
 .trabajos-realizados {
     grid-column: 1 / span 2;
-    grid-row: 2 / span 4;
+    display: grid;
     text-align: center;
 }
+
+
+.card-trabajos{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+  
+  .card-trabajos:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }

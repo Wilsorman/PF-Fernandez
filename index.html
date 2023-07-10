@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
@@ -80,23 +80,25 @@
                 <h2>
                     Piezas Realizadas
                 </h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi illo architecto consequuntur, ab ipsam
-                    saepe blanditiis consequatur tempora, voluptates vel sequi excepturi dignissimos sunt a aperiam odio
-                    doloremque! Provident.</p>
-                <img src="./images/emova-logo.jpg" alt="">
-                <img src="./images/ceramica-san-lorenzo_logo.jpg" alt="">
-                <img src="./images/aceros-angeletti.jpg" alt="">
+                <div class="container-img">
+                    <img src="./images/Rodillo.jpg" alt="Pieza mecanizada con forma de rodillo">
+                    <img src="./images/roflon-p.webp" alt="Pieza hecha en base a roflon-p">
+                    <img src="./images/rolo-rodillo-2.webp" alt="Pieza mecanizada con forma de Rodillo o Rolo">
+                </div>
                 <label for="boton-vermas">Ver mas trabajos realizados:</label>
-                <button class="caja-fotos-principales" id="boton-vermas">Ver mas</button>
+                <a class="btn btn-dark" href="./pages/trabajos-realizados.html" id="boton-vermas">Ver mas</a>
+
             </section>
-            <section class="caja-fotos-principales">
+            <section class="caja-fotos-principales ">
                 <h2>
                     Nuestros Clientes
                 </h2>
                 <p>Estas son algunas de las empresas que día a día confían en nuestro compromiso:</p>
+                <div class="container-clientes">
                 <img src="./images/emova-logo.jpg" alt="Logo de la empresa Emova">
                 <img src="./images/ceramica-san-lorenzo_logo.jpg" alt="Logo de la empresa ceramicas san lorenzo">
                 <img src="./images/aceros-angeletti.jpg" alt="Logo de la empresa Aceros Angeletti">
+            </div>
             </section>
         </main>
         <!--Termina el main-->

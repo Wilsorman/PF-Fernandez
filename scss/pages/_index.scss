@@ -6,12 +6,35 @@
     margin-top: 0;
 }
 
+.container-img {
+    display: flex;
+    max-height: 400px;
+    max-width: 400px;
+    object-fit: cover;
+    margin-left: 30%;
+    gap: 15px;
+
+
+    & img:hover {
+        filter: blur(4px) drop-shadow(0px 16px 5px #000000);
+        -webkit-filter: blur(4px) drop-shadow(0px 16px 5px #000000);
+        -moz-filter: blur(4px) drop-shadow(0px 16px 5px #000000);
+    }
+}
+.container-clientes{
+    display: flex;
+    max-height: 150px;
+    object-fit: cover;
+    margin-left: 28%;
+    gap: 15px;
+}
+
 .caja-fotos-principales {
     grid-row: 4;
     grid-column: 1 / span 2;
     text-align: center;
-    background-color: #4d4949;
-}
+    background-color: #4d4949;}
+
 
 .foto-primer-row {
     margin-top: 1rem;
@@ -25,7 +48,8 @@
 .titulo-main {
     grid-column: 1 / span 2;
     grid-row: 1;
-    text-align: center;}
+    text-align: center;
+}
 
 
 .titulo-main {
@@ -42,8 +66,8 @@
     background-color: #3861a8;
     animation-name: slider;
     animation-duration: 2.7s;
-    transition-timing-function: cubic-bezier(0,2,1,.1);
-    
+    transition-timing-function: cubic-bezier(0, 2, 1, .1);
+
 
 
     h1 {
@@ -56,63 +80,63 @@
         color: white;
         font-family: 'ABeeZee', sans-serif;
         animation-name: zoomout;
-        animation-delay: 1.5s ;
+        animation-delay: 1.5s;
         animation-duration: 2s;
         animation-fill-mode: both;
     }
-    
+
 }
 
 
-@keyframes zoomout{
+@keyframes zoomout {
 
     from {
         display: hidden;
         transform: scale(0);
     }
 
-    to{
+    to {
         display: block;
-    transform: scale(1);
+        transform: scale(1);
     }
 }
 
-@keyframes slider{
+@keyframes slider {
     from {
         margin-right: 20rem;
     }
 
-    to{
+    to {
         margin-right: 0rem;
     }
 }
 
-@keyframes slider2{
+@keyframes slider2 {
     from {
         margin-left: 20rem;
     }
 
-    to{
+    to {
         margin-left: 0rem;
     }
 }
 
 
 @media (min-width: 320px) and (max-width: 480px) {
-    .primer-row{
+    .primer-row {
         grid-column: 1 / span 2;
         max-height: 400px;
 
-        & p{
+        & p {
             margin-top: 10px;
         }
     }
 
-    .foto-primer-row{
+    .foto-primer-row {
         display: none;
     }
- 
-    main{ 
+
+    main {
         grid-template-rows: auto;
         grid-auto-flow: dense;
     }
