@@ -2,7 +2,6 @@
     grid-row: 3 / 4;
     grid-column: 1 / span 2;
     text-align: center;
-    background-color: #4d4949;
     margin-top: 0;
 }
 
@@ -13,27 +12,20 @@
     object-fit: cover;
     margin-left: 30%;
     gap: 15px;
-
-
-    & img:hover {
-        filter: blur(4px) drop-shadow(0px 16px 5px #000000);
-        -webkit-filter: blur(4px) drop-shadow(0px 16px 5px #000000);
-        -moz-filter: blur(4px) drop-shadow(0px 16px 5px #000000);
-    }
+    
 }
 .container-clientes{
     display: flex;
     max-height: 150px;
     object-fit: cover;
-    margin-left: 28%;
+    margin-left: 30%;
     gap: 15px;
 }
 
 .caja-fotos-principales {
     grid-row: 4;
     grid-column: 1 / span 2;
-    text-align: center;
-    background-color: #4d4949;}
+    text-align: center;}
 
 
 .foto-primer-row {
