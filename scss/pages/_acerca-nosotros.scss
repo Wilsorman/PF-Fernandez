@@ -13,3 +13,24 @@
     grid-row: 3;
     text-align: center;
 }
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .mision {
+        grid-column: 1 / span 2;
+        text-align: center;
+    }
+
+    .vision {
+        grid-row: 2;
+        text-align: center;
+        grid-column: 1 / span 2;
+
+    }
+
+    .valores {
+        grid-column: 1 / span 2;
+        text-align: center;
+    }
+}

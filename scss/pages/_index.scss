@@ -1,8 +1,8 @@
 .left-col-quienesomos {
     grid-row: 3 / 4;
     grid-column: 1 / span 2;
-    text-align: center;
-    margin-top: 0;
+    text-align: center; 
+    margin-left: 15%;
 }
 
 .container-img {
@@ -10,11 +10,11 @@
     max-height: 400px;
     max-width: 400px;
     object-fit: cover;
-    margin-left: 30%;
     gap: 15px;
-    
+
 }
-.container-clientes{
+
+.container-clientes {
     display: flex;
     max-height: 150px;
     object-fit: cover;
@@ -25,7 +25,10 @@
 .caja-fotos-principales {
     grid-row: 4;
     grid-column: 1 / span 2;
-    text-align: center;}
+    text-align: center;
+    margin-left: 15%;
+
+}
 
 
 .foto-primer-row {
@@ -35,6 +38,7 @@
     background-size: cover;
     animation-name: slider2;
     animation-duration: 2.7s;
+
 }
 
 .titulo-main {
@@ -122,6 +126,38 @@
         & p {
             margin-top: 10px;
         }
+    }
+
+    .left-col-quienesomos{
+        margin: 0;
+    }
+
+    .caja-fotos-principales{
+        margin: 0;
+    }
+    .container-img {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        margin: 0;
+    }
+
+    .container-img img {
+        flex: 0 0 100%;
+        width: 100%;
+        object-fit: cover;
+        scroll-snap-align: center;
+    }
+
+    .container-clientes{
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        margin: 0; 
     }
 
     .foto-primer-row {
