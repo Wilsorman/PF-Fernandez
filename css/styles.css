@@ -173,7 +173,6 @@ footer {
   grid-row: 3/4;
   grid-column: 1/span 2;
   text-align: center;
-  margin-left: 15%;
 }
 
 .container-img {
@@ -182,12 +181,14 @@ footer {
   max-width: 400px;
   object-fit: cover;
   gap: 15px;
+  margin-left: 30%;
 }
 
 .container-clientes {
   display: flex;
   max-height: 150px;
   object-fit: cover;
+  text-align: center;
   margin-left: 30%;
   gap: 15px;
 }
@@ -196,7 +197,6 @@ footer {
   grid-row: 4;
   grid-column: 1/span 2;
   text-align: center;
-  margin-left: 15%;
 }
 
 .foto-primer-row {
@@ -301,7 +301,6 @@ footer {
   .container-clientes {
     display: flex;
     width: 100%;
-    height: 100vh;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     margin: 0;
