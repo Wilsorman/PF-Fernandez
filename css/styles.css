@@ -134,6 +134,7 @@ footer {
   grid-column: 1/span 2;
   grid-row: 3;
   text-align: center;
+  list-style: none;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
