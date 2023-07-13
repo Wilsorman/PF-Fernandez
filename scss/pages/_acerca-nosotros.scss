@@ -1,18 +1,44 @@
-.mision {
 
+.centrado{
+    padding-top: 10%;
+}
+
+
+.titulo-acerca-nosotros {
+    grid-row: 1;
+    grid-column: 1 /span 2;
     text-align: center;
 }
+
+.mision {
+    margin-top: 10%;
+    grid-row: 2;
+    text-align: center;
+
+    &-img {
+        grid-row: 2;
+        grid-column: 2;
+        text-align: center;
+    }
+}
+
 
 .vision {
-
+    grid-row: 3;
     text-align: center;
+
+    &-img {
+        grid-row: 3;
+        grid-column: 2;
+        text-align: center;
+    }
 }
+
 
 .valores {
     grid-column: 1 / span 2;
-    grid-row: 3;
+    grid-row: 4;
     text-align: center;
-    list-style: none;
 }
 
 
@@ -21,17 +47,32 @@
     .mision {
         grid-column: 1 / span 2;
         text-align: center;
+
+
+        &-img {
+            grid-row: 3;
+            grid-column: 1 / span 2;
+        }
     }
 
+
     .vision {
-        grid-row: 2;
+        grid-row: 4;
         text-align: center;
         grid-column: 1 / span 2;
+
+
+        &-img{
+            margin-top: 45%;
+            grid-row: 4;
+            grid-column: 1 / span 2;  
+        }
 
     }
 
     .valores {
         grid-column: 1 / span 2;
+        grid-row: 5;
         text-align: center;
     }
 }

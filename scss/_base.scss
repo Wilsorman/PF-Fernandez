@@ -32,9 +32,20 @@ main {
     }
 }
 
-$color-principal:#97a8c6;
+$color-principal: #97a8c6;
 
 
-img{
+img {
     max-width: 300px;
 }
+
+.color-fuente {
+    h2 {
+        background-color: black;
+        color: white;
+    }
+
+    p {
+        font-family: 'ABeeZee', sans-serif;
+    }
+    }

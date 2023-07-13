@@ -13,11 +13,8 @@
 }
 
 .container-clientes {
-    display: flex;
     max-height: 150px;
-    object-fit: cover;
-    text-align: center;
-    gap: 15px;
+
 }
 
 .caja-fotos-principales {
@@ -160,8 +157,6 @@
 
     }
 
-    // Revisar HACER UN MIXING O ALGO QUE SOLO COMPLETEMOS LOS DATOS
-    //Aplicar variables.....
     .container-clientes{
         display: flex;
         width: 100%;
