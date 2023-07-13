@@ -10,7 +10,7 @@
     max-width: 400px;
     object-fit: cover;
     gap: 15px;
-    margin-left: 30%;
+    margin-left: 23%;
 
 }
 
@@ -19,7 +19,7 @@
     max-height: 150px;
     object-fit: cover;
     text-align: center;
-    margin-left: 30%;
+    margin-left: 23%;
     gap: 15px;
 }
 
@@ -142,15 +142,17 @@
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
         margin: 0;
+
+        & img{
+            flex: 0 0 100%;
+            width: 100%;
+            object-fit: cover;
+            scroll-snap-align: center;
+        }
     }
 
-    .container-img img {
-        flex: 0 0 100%;
-        width: 100%;
-        object-fit: cover;
-        scroll-snap-align: center;
-    }
-
+    // Revisar HACER UN MIXING O ALGO QUE SOLO COMPLETEMOS LOS DATOS
+    //Aplicar variables.....
     .container-clientes{
         display: flex;
         width: 100%;

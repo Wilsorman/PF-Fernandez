@@ -181,7 +181,7 @@ footer {
   max-width: 400px;
   object-fit: cover;
   gap: 15px;
-  margin-left: 30%;
+  margin-left: 23%;
 }
 
 .container-clientes {
@@ -189,7 +189,7 @@ footer {
   max-height: 150px;
   object-fit: cover;
   text-align: center;
-  margin-left: 30%;
+  margin-left: 23%;
   gap: 15px;
 }
 
