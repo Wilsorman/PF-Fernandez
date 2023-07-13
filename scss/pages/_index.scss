@@ -1,17 +1,15 @@
 .left-col-quienesomos {
-    grid-row: 3 / 4;
     grid-column: 1 / span 2;
-    text-align: center; 
+    text-align: center;
+    margin: 0 auto;
 }
 
 .container-img {
     display: flex;
     max-height: 400px;
-    max-width: 400px;
     object-fit: cover;
+    text-align: center;
     gap: 15px;
-    margin-left: 23%;
-
 }
 
 .container-clientes {
@@ -19,7 +17,6 @@
     max-height: 150px;
     object-fit: cover;
     text-align: center;
-    margin-left: 23%;
     gap: 15px;
 }
 
@@ -27,6 +24,7 @@
     grid-row: 4;
     grid-column: 1 / span 2;
     text-align: center;
+    margin: 0 auto;
 
 }
 
@@ -117,6 +115,21 @@
     }
 }
 
+@media (min-width: 320px) and (max-width: 968px) {
+
+    .container-img {
+        display: flex;
+        width: 100%;
+        overflow-x: scroll;
+
+        & img{
+            flex: 0 0 100%;
+            width: 100%;
+            object-fit: cover;
+            scroll-snap-align: center;
+        }}
+}
+
 
 @media (min-width: 320px) and (max-width: 480px) {
     .primer-row {
@@ -128,6 +141,15 @@
         }
     }
 
+
+        .foto-primer-row {
+            display: none;
+        }
+    
+        main {
+            grid-template-rows: auto;
+            grid-auto-flow: dense;
+        }
     .left-col-quienesomos{
         margin: 0;
     }
@@ -135,20 +157,7 @@
     .caja-fotos-principales{
         margin: 0;
     }
-    .container-img {
-        display: flex;
-        width: 100%;
-        height: 100vh;
-        overflow-x: scroll;
-        scroll-snap-type: x mandatory;
-        margin: 0;
 
-        & img{
-            flex: 0 0 100%;
-            width: 100%;
-            object-fit: cover;
-            scroll-snap-align: center;
-        }
     }
 
     // Revisar HACER UN MIXING O ALGO QUE SOLO COMPLETEMOS LOS DATOS
@@ -161,12 +170,4 @@
         margin: 0; 
     }
 
-    .foto-primer-row {
-        display: none;
-    }
 
-    main {
-        grid-template-rows: auto;
-        grid-auto-flow: dense;
-    }
-}

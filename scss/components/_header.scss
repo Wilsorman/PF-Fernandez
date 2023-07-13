@@ -22,14 +22,12 @@ header {
     display: inline;
     border-radius: 3%;
     overflow: auto;
-    margin-left: -300px;
 
 }
 
 .botom-nav {
     ul {
         list-style-type: none;
-        padding-left: 400px;
     }
 
     li {
@@ -57,5 +55,31 @@ header {
 }
 
 
+@media (min-width: 320px) and (max-width: 480px) {
+    .menu-mobile {
+        display: block;
+        list-style: none;
+        width: 100%;}
 
+    .custom-color-nav {
+        background-color:$color-principal;
+        & .nav-item {
+            background-color: #97a8c6;
+        }
+    }
+
+    header {
+        display: none;
+    }
+
+    .botom-nav {
+        display: hidden;
+    }
+
+    .logo {
+        display: none;
+    }
+
+
+}
 
