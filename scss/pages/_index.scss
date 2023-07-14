@@ -10,6 +10,10 @@
     object-fit: cover;
     text-align: center;
     gap: 15px;
+    
+    img{
+        border-radius: 10%;
+    }
 }
 
 .container-clientes {
@@ -143,10 +147,7 @@
             display: none;
         }
     
-        main {
-            grid-template-rows: auto;
-            grid-auto-flow: dense;
-        }
+
     .left-col-quienesomos{
         margin: 0;
     }

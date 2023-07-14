@@ -25,12 +25,15 @@ main {
     grid-area: main;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 40px 1fr 1fr;
+    grid-template-rows: auto;
+    grid-auto-flow: dense;
+}
 
 
     label {
         display: block;
     }
-}
+
 
 $color-principal: #97a8c6;
 
