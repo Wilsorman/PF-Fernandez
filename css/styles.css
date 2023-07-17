@@ -244,6 +244,9 @@ footer {
     grid-row: 5;
     text-align: center;
   }
+  .valores ul {
+    padding-left: 0;
+  }
 }
 .titulo-contacto {
   grid-column: 1/span 2;
