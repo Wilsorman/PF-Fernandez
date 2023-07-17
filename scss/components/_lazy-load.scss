@@ -1,0 +1,16 @@
+.lazy-load {
+    opacity: 0;
+    animation: carga 1s ease-in-out forwards;
+}
+
+@keyframes carga {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
