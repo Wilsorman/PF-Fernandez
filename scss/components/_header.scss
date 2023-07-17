@@ -2,7 +2,7 @@ header {
     grid-area: header;
     border-bottom: 0px solid black;
     box-shadow: 0 0.2rem 3rem -1rem;
-    background-color:$color-principal;
+    background-color: $color-principal;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,6 +23,10 @@ header {
     border-radius: 3%;
     overflow: auto;
 
+}
+
+.logo-mobile {
+    max-height: 60px;
 }
 
 .botom-nav {
@@ -54,15 +58,26 @@ header {
 
 }
 
+@media (min-width: 320px) and (max-width: 567px) {
+    .botom-nav{
+    a{
+        padding: 0;
+        margin: 1rem;
+    }
+
+}
+}
 
 @media (min-width: 320px) and (max-width: 480px) {
     .menu-mobile {
         display: block;
         list-style: none;
-        width: 100%;}
+        width: 100%;
+    }
 
     .custom-color-nav {
-        background-color:$color-principal;
+        background-color: $color-principal;
+
         & .nav-item {
             background-color: #97a8c6;
         }
@@ -82,4 +97,3 @@ header {
 
 
 }
-

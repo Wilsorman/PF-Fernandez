@@ -2,6 +2,11 @@
     grid-column: 1 / span 2;
     text-align: center;
     margin: 0 auto;
+    padding-bottom: 1%;
+
+    a{
+        margin-top: 3%;
+    }
 }
 
 .container-img {
@@ -10,8 +15,8 @@
     object-fit: cover;
     text-align: center;
     gap: 15px;
-    
-    img{
+
+    img {
         border-radius: 10%;
     }
 }
@@ -62,6 +67,7 @@
     animation-name: slider;
     animation-duration: 2.7s;
     transition-timing-function: cubic-bezier(0, 2, 1, .1);
+    padding: 10% 0 10% 0%;
 
 
 
@@ -71,7 +77,7 @@
     }
 
     p {
-        margin-top: 20%;
+        margin-top: 10%;
         color: white;
         font-family: 'ABeeZee', sans-serif;
         animation-name: zoomout;
@@ -123,12 +129,13 @@
         width: 100%;
         overflow-x: scroll;
 
-        & img{
+        & img {
             flex: 0 0 100%;
             width: 100%;
             object-fit: cover;
             scroll-snap-align: center;
-        }}
+        }
+    }
 }
 
 
@@ -143,27 +150,25 @@
     }
 
 
-        .foto-primer-row {
-            display: none;
-        }
-    
+    .foto-primer-row {
+        display: none;
+    }
 
-    .left-col-quienesomos{
+
+    .left-col-quienesomos {
         margin: 0;
     }
 
-    .caja-fotos-principales{
+    .caja-fotos-principales {
         margin: 0;
     }
 
-    }
+}
 
-    .container-clientes{
-        display: flex;
-        width: 100%;
-        overflow-x: scroll;
-        scroll-snap-type: x mandatory;
-        margin: 0; 
-    }
-
-
+.container-clientes {
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    margin: 0;
+}

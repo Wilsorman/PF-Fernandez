@@ -29,10 +29,12 @@ footer {
     .menu-mobile {
         display: block;
         list-style: none;
-        width: 100%;}
+        width: 100%;
+    }
 
     .custom-color-nav {
-        background-color:$color-principal;
+        background-color: $color-principal;
+
         & .nav-item {
             background-color: #97a8c6;
         }

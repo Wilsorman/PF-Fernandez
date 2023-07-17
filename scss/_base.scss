@@ -30,9 +30,9 @@ main {
 }
 
 
-    label {
-        display: block;
-    }
+label {
+    display: block;
+}
 
 
 $color-principal: #97a8c6;
@@ -40,6 +40,7 @@ $color-principal: #97a8c6;
 
 img {
     max-width: 300px;
+    max-height: 225px;
 }
 
 .color-fuente {
@@ -51,4 +52,4 @@ img {
     p {
         font-family: 'ABeeZee', sans-serif;
     }
-    }
+}
