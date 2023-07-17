@@ -54,6 +54,7 @@
 
 
         &-img {
+            padding-top: 5%;
             grid-row: 3;
             grid-column: 1 / span 2;
         }
@@ -65,9 +66,10 @@
         text-align: center;
         grid-column: 1 / span 2;
 
-
+        
         &-img {
-            margin-top: 45%;
+            padding-top: 20%;
+            margin-top: 50%;
             grid-row: 4;
             grid-column: 1 / span 2;
         }
