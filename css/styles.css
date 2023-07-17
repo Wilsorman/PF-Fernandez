@@ -215,6 +215,10 @@ footer {
   grid-row: 4;
   text-align: center;
 }
+.valores li {
+  list-style: none;
+  font-family: "ABeeZee", sans-serif;
+}
 
 @media (min-width: 320px) and (max-width: 480px) {
   .mision {
